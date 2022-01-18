@@ -19,6 +19,9 @@
 .busca{
     margin-top: 5px;
 }
+.dadosOs{
+    margin-top: 30px;
+}
 
 @media (max-width: 767px){
     .perfil{
