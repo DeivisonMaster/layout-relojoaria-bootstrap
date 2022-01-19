@@ -185,16 +185,29 @@
     <div class="modal fade" id="novaOS">
         <div class="modal-dialog">
             <div class="modal-content">
+                <!--header-->
                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
                     <h4 class="modal-title">Nova Ordem de Serviço</h4>
                 </div>
 
                 <form action="#">
+                    <!--body-->
                     <div class="modal-body">
+                        <!--alerts / danger / warning / info / success -->
+                        <div class="alert alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span>&times;</span>
+                            </button>
+                            Um erro ocorreu!
+                        </div>
+                        
                         <div class="row">
                             <div class="form-group col-xs-12">
                                 <label>Código OS</label>
-                                <p class="form-control-static">65151</p>
+                                <input type="text" class="form-control" value="65151" disabled>
                             </div>
                         </div>
 
@@ -209,8 +222,8 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-sm-7">
-                                <label for="servico">Serviço</label>
+                            <div class="form-group has-warning col-sm-7">
+                                <label for="servico" class="control-label">Serviço</label>
                                 <select id="servico" class="form-control">
                                     <option value="">Selecione</option>
                                     <option value="1">Ajuste data/hora</option>
@@ -221,15 +234,15 @@
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <label for="observacao">Observação</label>
+                            <div class="form-group has-error col-xs-12">
+                                <label for="observacao" class="control-label">Observação</label>
                                 <textarea id="observacao" rows="3" class="form-control"></textarea>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-4">
-                                <label for="valor">Valor</label>
+                            <div class="form-group has-success col-sm-4">
+                                <label for="valor" class="control-label">Valor</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">R$</div>
                                     <input type="text" id="valor" class="form-control">
@@ -238,6 +251,7 @@
                         </div>
                     </div>
 
+                    <!--footer-->
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-danger">Limpar</button>
                         <button type="submit" class="btn btn-primary">Salvar</button>
