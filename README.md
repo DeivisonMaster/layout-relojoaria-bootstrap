@@ -2,7 +2,7 @@
 <p>Implementação básica de layout de sistema de relojoaria com recursos do bootstrap</p>
 
 <h2>Descrição</h2>
-<p>Layout de sistema básico de relojoaria com bootstrap</p>
+<p>Layout de sistema básico de relojoaria com bootstrap. O sistema se encontra no diretorio <strong>/sistema</strong></p>
 
 <h2>Objetivo</h2>
 <p>Desenvolver layout básico de sistema de relojoaria com bootstrap. 
